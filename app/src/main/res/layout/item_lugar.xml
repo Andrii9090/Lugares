@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:id="@+id/item_place"
+    android:padding="12dip"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:id="@+id/item_lugar_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/app_name"
+        style="@style/ItemName"
+        app:layout_constraintWidth_percent="0.8"
+        />
+    <TextView
+        android:id="@+id/item_lugar_date_create"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/item_lugar_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="center"
+        tools:text="20.04.2021"
+        />
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/item_lugar_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/item_lugar_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:stepSize="0.5"
+        android:isIndicator="true"
+        android:clickable="false"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/changePlace"
+        android:title="@string/chanege_place"
+        app:showAsAction="never" />
+    <item android:id="@+id/deletePlace"
+        android:title="@string/delete_place"
+        app:showAsAction="never" />
+    <item android:id="@+id/createPlace"
+        android:title="@string/create_new_place"
+        app:showAsAction="never" />
+    <item android:id="@+id/openPlaceList"
+        android:title="@string/open_place_list"
+        app:showAsAction="never" />
+    <item android:id="@+id/logOut"
+        android:title="@string/log_out"
+        app:showAsAction="never" />
+</menu>

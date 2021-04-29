@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MisLugaresFavoritos</string>
+    <string name="logo_main">Mis lugares favoritos</string>
+    <string name="hint_email">Tu email</string>
+    <string name="hint_password">Tu contraseña</string>
+    <string name="btn_signin">Entrar</string>
+    <string name="lista_vacia">LISTA ESTA VACIA</string>
+    <string name="create_new_place">Nuevo lugar</string>
+    <string name="place_name">Nombre de lugar</string>
+    <string name="text_description">Descripcíon</string>
+    <string name="create_new_place_btn_text">Create</string>
+    <string name="add_new_local">Añadir localización</string>
+    <string name="nuevo_lugar_title">Lugar nuevo</string>
+    <string name="error_create_place">No ha creando</string>
+    <string name="open_place_list">Abrir lista de lugares</string>
+    <string name="log_out">Serrar sesión</string>
+    <string name="chanege_place">Modificar lugar</string>
+    <string name="delete_place">Borar lugar</string>
+    <string name="error_delete_place">El lugar no ha borado</string>
+    <string name="update_place">Modificar</string>
+    <string name="update_place_logo">Modificar place</string>
+    <string name="main_title">Mis lugares favorites</string>
+</resources>
