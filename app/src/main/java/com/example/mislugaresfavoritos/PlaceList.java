@@ -75,6 +75,7 @@ public class PlaceList extends AppCompatActivity implements RVAdapterLugares.Dat
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu, menu);
+        menu.removeItem(R.id.openPlaceList);
         return true;
     }
 
@@ -95,6 +96,7 @@ public class PlaceList extends AppCompatActivity implements RVAdapterLugares.Dat
                 SharedPreferences sharedPreferences = getSharedPreferences("misLugares", MODE_PRIVATE);
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putBoolean("logged", false);
+                editor.apply();
                 startActivity(i);
                 return true;
             default:

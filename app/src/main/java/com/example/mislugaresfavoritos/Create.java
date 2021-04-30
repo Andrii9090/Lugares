@@ -134,6 +134,7 @@ public class Create extends AppCompatActivity implements OnMapReadyCallback, Goo
                 SharedPreferences sharedPreferences = getSharedPreferences("misLugares", MODE_PRIVATE);
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putBoolean("logged", false);
+                editor.apply();
                 startActivity(i);
                 return true;
             default:

@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".RegistrationActivity">
+
     <TextView
-        android:id="@+id/main_activity_logo"
+        android:id="@+id/registration_logo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/logo_main"
+        android:text="@string/logo_registration"
         android:textAlignment="center"
         app:layout_constraintHeight_percent="0.3"
         android:textSize="55dp"
@@ -18,38 +19,28 @@
         />
 
     <EditText
-        android:id="@+id/main_activity_email"
+        android:id="@+id/registration_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/main_activity_logo"
+        app:layout_constraintTop_toBottomOf="@id/registration_logo"
         android:hint="@string/hint_email"
         android:padding="10dp"
         />
     <EditText
-        android:id="@+id/main_activity_password"
+        android:id="@+id/registration_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/main_activity_email"
+        app:layout_constraintTop_toBottomOf="@id/registration_email"
         android:hint="@string/hint_password"
-        android:inputType="textPassword"
         android:padding="10dp"
         />
     <Button
-        android:id="@+id/main_activity_btn_signin"
+        android:id="@+id/registration_btn_create_account"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/ButtonMain"
-        app:layout_constraintTop_toBottomOf="@id/main_activity_password"
-        android:text="@string/btn_signin"
+        app:layout_constraintTop_toBottomOf="@id/registration_password"
+        android:text="@string/btn_create_user"
         />
 
-    <Button
-        android:id="@+id/main_activity_btn_create_account"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/Widget.AppCompat.Button"
-        android:onClick="registration"
-        app:layout_constraintTop_toBottomOf="@id/main_activity_btn_signin"
-        android:text="@string/btn_create_account"
-        />
 </androidx.constraintlayout.widget.ConstraintLayout>

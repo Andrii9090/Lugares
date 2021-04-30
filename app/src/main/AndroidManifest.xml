@@ -9,20 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UpdatePlace" android:parentActivityName=".PlaceList"></activity>
+        <activity android:name=".RegistrationActivity"></activity>
+        <activity
+            android:name=".UpdatePlace"
+            android:parentActivityName=".PlaceList" />
         <activity
             android:name=".PlaceDetail"
             android:parentActivityName=".PlaceList" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="{$MAPS_API_KEY}" />
+            android:value="@integer/key" />
 
         <activity
             android:name=".Create"
             android:parentActivityName=".PlaceList" />
-        <activity android:name=".PlaceList">
-        </activity>
+        <activity android:name=".PlaceList" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
